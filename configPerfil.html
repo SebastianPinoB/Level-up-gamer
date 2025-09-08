@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_configPerfil.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Perfil</title>
+</head>
+
+<body>
+    <div class=container>
+        <div id=encabezado>
+            <h1> LevelUP Gamer</h1>
+            <h2> Configuracion Perfil</h2>
+        </div>
+
+        <div id=cardPerfil>
+            <img src="profile.png">
+            <form action="login">
+                <label for="user"> Nombre de usuario:</label>
+                <input type="text" name="user" id="user" placeholder="John Doe">
+                <label for="email"> Correo Electronico:</label>
+                <input type="email" name="email" id="email" placeholder="j.doe@example.em">
+                <label for="rut"> RUT: </label>
+                <input type="text" name="rut" id="rut" placeholder="RUT" readonly>
+                <label for="direccion"> Direccion: </label>
+                <input type="text" name="direccion" id="direccion" placeholder="Los Angeles, 2109">
+            </form>
+
+            <div id=metodoPago>
+                <h3>Forma de pago</h3>
+                <label for="payProcess"></label>
+                <select name="payProcess" id="payProcess">
+                    <option value="Tarjeta debito"> Tarjeta de debito</option>
+                    <option value="Tarjeta credito"> Tarjeta de Credito</option>
+                </select>
+            </div>
+
+            <div id="editar">
+                <button type="submit"> Guardar</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
