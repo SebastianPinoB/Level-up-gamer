@@ -7,6 +7,7 @@ body{
     display: flex;
     justify-content: center;
     align-content: center;
+    min-height: 100vh;
 }
 
 .container{
@@ -19,29 +20,41 @@ body{
     text-align: center;
     font-family: 'Orbitron', sans-serif;
     font-weight: 300;
-    color: #1E90FF;
-    background-color: #39FF14;
-    border-radius: 10px;
+    color: #39FF14;
+    background-color: #1a1a1a;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px #0a83a8a4;
 }
 
 #cardPerfil{
     height: 100%;
-    width: 150px;
-    margin-left: 400px;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
     text-align: center;
-    justify-items: center;
     color: #39FF14;
 }
 
 #metodoPago{
+    padding-top: 20px;
     height: 50px;
 }
 
-input{
-    height: 15px;
-    width: 200px;
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: center;
+}
+
+input, select{
+    height: 20px;
+    max-width: 400px;
     text-align: center;
-    border: 10px;
+    border: 12px;
+    border-radius: 12px;
+    background-color: #458a306c;
 }
 
 img{
@@ -50,12 +63,14 @@ img{
     width: 100px;
 }
 
-select{
-    height: 20px;
-    width: 140px;
-    text-align: center;
+#editar{
+    margin-top: 90px;
 }
 
-#editar{
-    padding-top: 50px;
+#editar button{
+    height: 30px;
+    max-width: 400px;
+    border-radius: 12px;
+    background-color: #39FF14;
+    color: #1a1a1a;
 }
