@@ -6,14 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iniciar sesión | Level-Up </title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="stylesRegister.css">
 </head>
 
 <body>
     <!--<div id="encabezado"> <P> hOLA MUNDO</P></div>-->
+    <div id="encabezado">
+
+    </div>
 
     <div id="cardRegister">
-        <label for="Name">Ingresa tus datos para crear tu cuenta</label>
+        <div>
+            <p id="bienvenida"> <b>Bienvenida </b> </p>
+        </div>
+        
+        <label for="datos" id="ingresadatos">Ingresa aqui tus datos para crear tu cuenta</label>
         <input name="email" id="email" placeholder="Correo">
         <div id="result"></div>
 
@@ -24,16 +31,15 @@
         <div id="resultadoPdos"></div>
 
         <div id="fechanac">
-            <label for="nacimiento">Fecha de nacimiento:</label>
+            <label id="label-nacimiento" for="nacimiento">Fecha de nacimiento:</label>
             <input
                 type="date"
                 id="nacimiento"
                 name="fecha_nac"
                 max="2025-09-30"/>
         </div>
-        <button type="submit"> CREAR CUENTA </button>
+        <button id= "crearcuenta-btn" type="submit"> CREAR CUENTA </button>
         
-
         
     </div>
 </body>
