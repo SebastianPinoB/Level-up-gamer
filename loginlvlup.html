@@ -4,32 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iniciar sesión | Level-Up </title>
+    <title>Iniciar sesión | Level-Up</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="stylesLog.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div id="encabezado">
-    </div>
 
-    <div id="cardRegister">
-        <div>
-            <p id="bienvenida"> <b>Bienvenid@ a Level-Up Gamer </b> </p>
+    <header class="encabezado">
+        <img src="imgs/lvp-Photoroom.png" class="logo">
+        <ul>
+            <li>
+                <a href="homelvlup.html" class="sinlink">Home </a> 
+                <a href="#" class="sinlink">| Productos </a>
+                <a href="#" class="sinlink">| Nosotros </a>
+                <a href="#" class="sinlink">| Blogs </a>
+                <a href="#" class="sinlink">| Contacto </a>
+            </li>
+        </ul>
+    </header>
+
+    <main>
+        <div id="cardRegister">
+            <p id="bienvenida"><b>Bienvenid@ a Level-Up Gamer</b></p>
+
+            <form id="loginForm">
+                <label for="email" class="ingresadatos">Ingresa aquí tus datos para entrar al sitio</label>
+                <input type="email" name="email" id="email" placeholder="Correo" required>
+                <div id="resultadoE"></div>
+
+                <input type="password" name="pass" id="password" placeholder="Contraseña" required>
+                <div id="resultadoP"></div>
+
+                <button id="ingresarcuenta-btn" class="cuenta-btn" type="submit"><b>INICIAR SESIÓN</b></button>
+            </form>
+
+            <p class="estadocuenta">¿No tienes una cuenta? 
+                <a href="registerlvlup.html">Regístrate</a>
+            </p>
         </div>
-        
-        <label for="datos" class="ingresadatos">Ingresa aqui tus datos para entrar al sitio</label>
-        <input name="email" id="email" placeholder="Correo">
-        <div id="result"></div>
+    </main>
 
-        <input type="password" name="pass" id="password" placeholder="Contraseña">
-        <div id="resultadoP"></div>
-
-        <button id= "ingresarcuenta-btn" class="cuenta-btn" type="submit"> <b>INICIAR SESIÓN</b> </button>
-
-        <label for="sincuenta" class="estadocuenta"> ¿No tienes una cuenta? <a href="registerlvlup.html">Regístrate</a></label>
-        
-    </div>
 </body>
-
 </html>
