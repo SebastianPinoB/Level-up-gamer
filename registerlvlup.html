@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crea tu cuenta | Level-Up </title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="stylesLog.css">
+</head>
+
+<body>
+    <!--<div id="encabezado"> <P> hOLA MUNDO</P></div>-->
+    <div id="encabezado">
+
+    </div>
+
+    <div id="cardRegister">
+        <div>
+            <p id="bienvenida"> <b>Bienvenid@ a Level-Up Gamer </b> </p>
+        </div>
+        
+        <label for="datos" class="ingresadatos">Ingresa aqui tus datos para crear tu cuenta</label>
+        <input name="email" id="email" placeholder="Correo">
+        <div id="result"></div>
+
+        <input type="password" name="pass" id="password" placeholder="Contraseña">
+        <div id="resultadoP"></div>
+
+        <input type="password" name="cPass" id="password" placeholder="Confirmar contraseña">
+        <div id="resultadoPdos"></div>
+
+        <div id="fechanac">
+            <label id="label-nacimiento" for="nacimiento">Fecha de nacimiento:</label>
+            <input
+                type="date"
+                id="nacimiento"
+                name="fecha_nac"
+                max="2025-09-30"/>
+        </div>
+        <button id= "crearcuenta-btn" class="cuenta-btn" type="submit"> <b>CREAR CUENTA</b> </button>
+        
+        <label for="concuenta" class="estadocuenta"> ¿Ya tienes una cuenta? <a href="loginlvlup.html">Inicia sesión</a></label>
+        
+    </div>
+</body>
+
+</html>
