@@ -1,0 +1,98 @@
+body{
+    background-color: rgb(39, 39, 39);
+    color:#6b6b6bef;
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+}
+
+#encabezado{
+    color: #ffff;
+    height: 100px;
+    width:100%;
+    margin: 20px 0;
+    box-shadow: 0 4px 10px #39FF14;
+    text-align: center;
+}
+
+.reseña{
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.reseña h3{
+    color: #d9d9d9;
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.reseña h4{
+    color: #d9d9d9;
+    font-size: 0.8rem;
+    margin: 5px 0;
+}
+
+.reseña p{
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+#cardReseña{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #1E90FF;
+    color: #FFF;
+}
+
+
+.header{
+    display: flex;
+    align-items: center;
+}
+
+.header img{
+    width: 30px;
+    padding: 20px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.header h2{
+    font-size: 1.52rem;
+}
+
+.encabezadoHeader{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.encabezadoHeader img{
+    width: 80px;
+}
+
+.encabezadoHeader h1{
+    text-align: center;
+}

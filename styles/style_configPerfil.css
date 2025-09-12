@@ -20,20 +20,22 @@ body{
     text-align: center;
     font-family: 'Orbitron', sans-serif;
     font-weight: 300;
-    color: #39FF14;
+    color: #ffffff;
     background-color: #1a1a1a;
     border-radius: 12px;
     margin-bottom: 20px;
-    box-shadow: 0 4px 10px #0a83a8a4;
+    box-shadow: 0 4px 10px #39FF14;
 }
 
 #cardPerfil{
     height: 100%;
     max-width: 400px;
     margin: 20px auto;
-    padding: 20px;
+    padding: 60px;
     text-align: center;
-    color: #39FF14;
+    color:#ffffff;
+    box-shadow: 0 4px 10px #39FF14;
+    background-color: #1E90FF;
 }
 
 #metodoPago{
@@ -54,7 +56,12 @@ input, select{
     text-align: center;
     border: 12px;
     border-radius: 12px;
-    background-color: #458a306c;
+    background-color: transparent;
+    border: 1px solid #ffff ;
+}
+
+input::placeholder{
+    color: #D3D3D3;
 }
 
 img{
