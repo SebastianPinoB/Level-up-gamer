@@ -1,6 +1,6 @@
 body{
     background-color: rgb(39, 39, 39);
-    color:#6b6b6bef;
+    color:#ffffffef;
     font-family: 'Roboto', sans-serif;
     padding: 0;
     margin: 0;
@@ -27,6 +27,7 @@ body{
     margin: 20px 0;
     box-shadow: 0 4px 10px #39FF14;
     text-align: center;
+    font-family: "Orbitron", sans-serif;
 }
 
 .reseña{
@@ -142,4 +143,24 @@ body{
     background-color: #39FF14;
     color: #000;
     cursor: pointer;
+}
+
+#footer{
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+    width: 100%;
+    background-color: #333b39;
+    border-radius: 12px;
+    color: #d3d3d3;
+}
+
+#footer a, #footer p{
+    display: inline-block;
+    margin: 15px;
+    font-weight: 500px;
+}
+
+#footer a{
+    color: #39FF14;
 }
