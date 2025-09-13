@@ -31,7 +31,7 @@ body{
     height: 100%;
     max-width: 400px;
     margin: 20px auto;
-    padding: 60px;
+    padding: 90px;
     text-align: center;
     color:#ffffff;
     box-shadow: 0 4px 10px #39FF14;
@@ -78,6 +78,43 @@ img{
     height: 30px;
     max-width: 400px;
     border-radius: 12px;
+    background-color: #333b39;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+
+#editar button:active{
     background-color: #39FF14;
-    color: #1a1a1a;
+}
+
+#detallesTarjeta{
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #1a1a1a;
+    display: none;
+    flex-direction: column;
+    border: 12px;
+    gap: 6px;
+}
+
+#detallesTarjeta ::placeholder{
+    color: #D3D3D3;
+}
+
+#footer{
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    border-radius: 12px;
+    padding: 15px 0;
+    font-family: "Roboto";
+}
+
+#footer p, #footer a{
+    display: inline-block;
+    margin: 15px;
+    font-weight: 500px;
 }
