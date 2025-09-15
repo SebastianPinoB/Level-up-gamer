@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+body{
+    background-color: black;
+}
+
+.productosTexto{
+    color: white;
+}
+
+.textoPrimario{
+    color: #FFFFFF;
+    padding-left: 10px;
+}
+
+.textoSecundario{
+    color: #D3D3D3;
+    padding-left: 60px;
+    padding-right: 50px;
+}
+
+#cuerpoCarrito {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 8px;
+    padding: 20px 350px 0px 350px;
+}
+
+h2{
+    font-family: 'Roboto', sans-serif;
+}
+
+h3{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+    
+.div1 {
+    grid-column: span 4 / span 4;
+}
+
+.div2 {
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    grid-column-start: 5;
+}
+
+.div3 {
+    grid-column: span 4 / span 4;
+    grid-row: span 4 / span 4;
+    grid-row-start: 2;
+
+    justify-self: stretch;
+    align-self: stretch;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div4 {
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-column-start: 5;
+    grid-row-start: 3;
+}
+
+.imagenCarrito{
+    width: 100px;
+    height: 100px;
+}
+
+.estilosComunes{
+    background-color: #1E90FF;
+    border-radius: 15px; /* Radio de las esquinas */
+}
+
+.cuerpoResumen{
+    display: flex;
+    justify-content: space-between;
+}
+
+.botonPagar, .btnIrTienda{
+    justify-self: center;
+    width: 90%;
+    padding-bottom: 10px;
+    
+}
+
+.pagar{
+    width: 100%;
+    height: 30px;
+    background-color: #39FF14;
+    border: none;           /* Quita el borde */
+    border-radius: 999px;   /* Redondea completamente (puedes ajustar el valor) */
+    cursor: pointer;        /* Cursor tipo "mano" */
+}
+.estilosComunes > div{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.cuerpo4{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.encabezadoDelivery, .encabezadoSeguridad, .encabezadoPagos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.encabezadoDelivery>img, .encabezadoSeguridad>img, .encabezadoPagos>img{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+#textoPagos, #textoSeguridad, #textoDelivery{
+    margin: 0;
+}
+
+img {
+  filter: invert(1);
+  padding-left: 15px;
+}
+
+.productosRelacionados {
+    margin: 50px auto;
+    width: 90%;
+    max-width: 1200px;
+    background-color: #1E90FF;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+.productosRelacionados h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.productos-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.producto {
+    background-color: white;
+    color: #333;
+    flex: 1 1 calc(25% - 20px); /* 4 productos por fila */
+    max-width: calc(25% - 20px);
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    transition: transform 0.2s ease;
+}
+
+.producto:hover {
+    transform: scale(1.05);
+}
+
+.btnIrTienda{
+    width: 80%;
+    height: 30px;
+    background-color: #39FF14;
+    border: none;           /* Quita el borde */
+    border-radius: 999px;   /* Redondea completamente (puedes ajustar el valor) */
+    cursor: pointer;        /* Cursor tipo "mano" */
+    align-content: center;
+    margin-top: 30px;
+    justify-self: center;
+}
+
+.divInner{
+    display: flex;
+    justify-content: center;
+    align-items: center; /* si también quieres centrarlo verticalmente */
+}

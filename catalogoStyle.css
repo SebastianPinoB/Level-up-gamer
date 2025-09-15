@@ -16,9 +16,38 @@ hr{
     width: 250px;
     margin-left: 30px;
 }
-
+img{
+    width: 60%;
+    height: 60%;
+}
 .categoria{
     background-color: #252424;
-    height: 270px;
+    display: flex;
+    height: 300px;
     margin: 20px;
+}
+
+.categoriaContainer{
+    margin:  0 0 200px 0 ;
+}
+
+.aver{
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.item {
+  background: rgb(255, 255, 255);
+  border: 1px solid #333;
+  text-align: center;
+  font-size: 18px;
+  height: 100%;
+  width: 100%;
+  margin: 5px;
+  border-radius: 10px; 
+}
+
+.descripcion{
+    color: black;
 }
