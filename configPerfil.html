@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/style_configPerfil.css">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap"
+            rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+            rel="stylesheet">
+        <title>Perfil - Configuración</title>
+    </head>
+
+    <body>
+        <div class=container>
+            <div id=encabezado>
+                <img src="imgs/lvp-Photoroom.png" alt>
+                <h1> LevelUP Gamer</h1>
+                <h2> Configuracion Perfil</h2>
+            </div>
+
+            <div id=cardPerfil>
+                <img src="imgs/profile.png">
+
+                <form id="login">
+                    <label for="user"> Nombre de usuario</label>
+                    <input type="text" name="user" id="user"
+                        placeholder="John Doe" required>
+                    <label for="email"> Correo Electronico</label>
+                    <input type="email" name="email" id="email"
+                        placeholder="j.doe@example.em" required>
+                    <label for="rut"> RUT </label>
+                    <input type="text" name="rut" id="rut" placeholder="RUT"
+                        readonly>
+                    <label for="direccion"> Direccion </label>
+                    <input type="text" name="direccion" id="direccion"
+                        placeholder="Los Angeles, 2109" required>
+
+                    <div id=metodoPago>
+                        <h3>Forma de pago</h3>
+                        <label for="payProcess"></label>
+                        <select name="payProcess" id="payProcess">
+                            <option value="Tarjeta debito"> Tarjeta de
+                                debito</option>
+                            <option value="Tarjeta credito"> Tarjeta de
+                                Credito</option>
+                            <option value="Efectivo"> Efectivo</option>
+                        </select>
+
+                    </div>
+
+                    <div id="detallesTarjeta">
+                        <label for="numTarjeta"> Numero Tarjeta</label>
+                        <input type="text" id="numTarjeta"
+                            placeholder="1234 1234 1234" required>
+                        <label for="fecha"> Fecha Vencimiento</label>
+                        <input type="text" id="fecha" placeholder="MM/AA"
+                            required>
+                        <label for="CVC"> CVC:</label>
+                        <input type="text" id="CVC" placeholder="123" required>
+                    </div>
+
+                    <div id="editar">
+                        <button type="submit"> Guardar cambios</button>
+                    </div>
+
+                </form>
+
+            </div>
+
+            <div id="footer">
+                <footer>
+                    <p> LevelUP Gamer 2025</p>
+                    <a href="#"> > Inicio</a>
+                    <a href="#"> > Nosotros</a>
+                    <a href="#"> > Contacto</a>
+                </footer>
+            </div>
+        </div>
+    </body>
+
+    <script src="scripts/configPerfil_script.js"></script>
+</html>

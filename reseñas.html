@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/style_reseñas.css">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap"
+            rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+            rel="stylesheet">
+        <title>Nuestras Reseñas</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <div id=encabezado>
+
+                <div class=encabezadoHeader>
+
+                    <img src="imgs/lvp-Photoroom.png" alt>
+                    <h1>Reseñas</h1>
+                    <a href="#"> Volver</a>
+                </div>
+
+            </div>
+
+            <div id="cardReseña">
+                <div class="reseña">
+
+                    <div class="header">
+                        <img src="imgs/Broly_M_ximo_Poder.webp" alt>
+                        <h2>Carlos P.</h2>
+                    </div>
+
+                    <h3> Monitor 4K * Hace 1 mes</h3>
+                    <h4> 5 estrellas</h4>
+                    <p> El producto me llego super bien 10/10.</p>
+                </div>
+
+                <div class="reseña">
+                    <div class="header">
+                        <img src="imgs/fedep.avif" alt>
+                        <h2>Fede P.</h2>
+                    </div>
+
+                    <h3>Mario Kart 8 Switch * Hace 2 meses</h3>
+                    <h4>4 estrellas</h4>
+                    <p>Vas a caer Dross.</p>
+                </div>
+
+                <div class="reseña">
+                    <div class="header">
+                        <img src="imgs/Dante.webp" alt>
+                        <h2>Dante S.</h2>
+                    </div>
+                    <h3> Laptop Gamer * Hace 1 semana</h3>
+                    <h4> 4 estrellas</h4>
+                    <p>Me quede sin plata para la luz.</p>
+                </div>
+            </div>
+
+            <div id="publicar">
+                <details>
+                    <summary>Publicar Reseña</summary>
+
+                    <div class="boxReseña">
+                        <label for="productos">Producto:</label>
+                        <select id="productos">
+                            <option value>--Selecciona un producto--</option>
+                            <option value="monitor">Monitor 4K</option>
+                            <option value="switch">Mario Kart 8 Switch</option>
+                            <option value="laptop">Laptop Gamer</option>
+                            <option value="teclado">Teclado Mecánico</option>
+                            <option value="audifonos">Audífonos Gamer</option>
+                        </select>
+
+                        <textarea placeholder="Escribe tu reseña aquí..."
+                            rows="4"></textarea>
+
+                        <label for="estrellas">Calificación:</label>
+                        <select id="estrellas">
+                            <option value>--Selecciona--</option>
+                            <option value="1">⭐</option>
+                            <option value="2">⭐⭐</option>
+                            <option value="3">⭐⭐⭐</option>
+                            <option value="4">⭐⭐⭐⭐</option>
+                            <option value="5">⭐⭐⭐⭐⭐</option>
+                        </select>
+
+                        <!-- Botón enviar -->
+                        <button>Enviar Reseña</button>
+                    </div>
+                </details>
+            </div>
+
+            <div id="footer">
+                <footer>
+                    <p>LevelUP Gamer 2025</p>
+                    <a href="#"> > Inicio</a>
+                    <a href="#"> > Nosotros</a>
+                    <a href="#"> > Contacto</a>
+                </footer>
+            </div>
+        </div>
+    </body>
+
+    <script src="scripts/reseñas_script.js"></script>
+
+</html>

@@ -1,0 +1,123 @@
+body{
+    background-color: rgb(39, 39, 39);
+    color:#6b6b6bef;
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;   
+}
+
+#encabezado{
+    width: 950px;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 300;
+    color: #ffffff;
+    background-color: #1a1a1a;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px #39FF14;
+}
+
+#cardPerfil{
+    height: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 90px;
+    text-align: center;
+    color:#ffffff;
+    box-shadow: 0 4px 10px #39FF14;
+    background-color: #1E90FF;
+}
+
+#metodoPago{
+    padding-top: 20px;
+    height: 50px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: center;
+}
+
+input, select{
+    height: 20px;
+    max-width: 400px;
+    text-align: center;
+    border: 12px;
+    border-radius: 12px;
+    background-color: transparent;
+    border: 1px solid #ffff ;
+}
+
+input::placeholder{
+    color: #D3D3D3;
+}
+
+img{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100px;
+}
+
+#editar{
+    margin-top: 90px;
+}
+
+#editar button{
+    height: 30px;
+    max-width: 400px;
+    border-radius: 12px;
+    background-color: #333b39;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#editar button:hover{
+    background-color: #39FF14;
+}
+
+#detallesTarjeta{
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #1a1a1a;
+    display: none;
+    flex-direction: column;
+    border: 12px;
+    gap: 6px;
+}
+
+#detallesTarjeta ::placeholder{
+    color: #D3D3D3;
+}
+
+#footer{
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    background-color: #1a1a1a;
+    color: #d3d3d3;
+    border-radius: 12px;
+    padding: 15px 0;
+    font-family: "Roboto";
+}
+
+#footer p, #footer a{
+    display: inline-block;
+    margin: 15px;
+    font-weight: 500px;
+}
+
+#footer a{
+    color: #39FF14;
+}
