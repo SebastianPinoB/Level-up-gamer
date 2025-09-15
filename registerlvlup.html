@@ -28,41 +28,49 @@
         </ul>
     </header>
 
-    <div id="cardRegister">
-        <div>
-            <p id="bienvenida"><b>Bienvenid@ a Level-Up Gamer</b></p>
-        </div>
-        
-        <form action="">
-            <label for="email" class="ingresadatos">Ingresa aquí tus datos para crear tu cuenta</label>
-            <input type="email" name="email" id="email" placeholder="Correo" required>
-            <div id="resultadoE"></div>
-
-            <input type="password" name="pass" id="password" placeholder="Contraseña" required>
-            <div id="resultadoP"></div>
-
-            <input type="password" name="cPass" id="confirmPassword" placeholder="Confirmar contraseña" required>
-            <div id="resultadoPdos"></div>
-
-            <div id="fechanac">
-                <label id="label-nacimiento" for="nacimiento">Fecha de nacimiento:</label>
-                <input
-                    type="date"
-                    id="nacimiento"
-                    name="fecha_nac"
-                    max="2025-09-30"
-                    required />
+    <main>
+        <div id="cardRegister">
+            <div>
+                <p id="bienvenida"><b>Bienvenid@ a Level-Up Gamer</b></p>
             </div>
+            
+            <form action="">
+                <label for="email" class="ingresadatos">Ingresa aquí tus datos para crear tu cuenta</label>
+                <input type="text" name="email" id="email" placeholder="Correo">
+                <div id="resultadoE"></div>
 
-            <button id="crearcuenta-btn" class="cuenta-btn" type="submit">
-                <b>CREAR CUENTA</b>
-            </button>
-        </form>
+                <input type="password" name="pass" id="password" placeholder="Contraseña">
+                <div id="resultadoP"></div>
 
-        <label for="concuenta" class="estadocuenta">
-            ¿Ya tienes una cuenta? <a href="loginlvlup.html">Inicia sesión</a>
-        </label>
-        
-    </div>
+                <input type="password" name="cPass" id="confirmPassword" placeholder="Confirmar contraseña">
+                <div id="resultadoPdos"></div>
+
+                <label class="label-nacimiento" for="">Codigo de referidos:</label>
+                <input name="codigoref" id="codigoref" placeholder="Codigo referido">
+                <div id="codigoreferido"></div>
+
+                <div id="fechanac">
+                    <label class="label-nacimiento" for="nacimiento">Fecha de nacimiento:</label>
+                    <input
+                        type="date"
+                        id="nacimiento"
+                        name="fecha_nac"
+                        max="2025-09-30"
+                        required />
+                </div>
+
+                <button id="crearcuenta-btn" class="cuenta-btn" type="submit">
+                    <b>CREAR CUENTA</b>
+                </button>
+            </form>
+
+            <label for="concuenta" class="estadocuenta">
+                ¿Ya tienes una cuenta? <a href="loginlvlup.html">Inicia sesión</a>
+            </label>
+            
+        </div>
+    </main>
+
+<script src="scriptRegister.js"></script>
 </body>
 </html>

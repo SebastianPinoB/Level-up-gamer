@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
@@ -33,10 +34,10 @@
 
             <form id="loginForm">
                 <label for="email" class="ingresadatos">Ingresa aquí tus datos para entrar al sitio</label>
-                <input type="email" name="email" id="email" placeholder="Correo" required>
+                <input type="text" name="email" id="email" placeholder="Correo">
                 <div id="resultadoE"></div>
 
-                <input type="password" name="pass" id="password" placeholder="Contraseña" required>
+                <input type="password" name="pass" id="password" placeholder="Contraseña">
                 <div id="resultadoP"></div>
 
                 <button id="ingresarcuenta-btn" class="cuenta-btn" type="submit"><b>INICIAR SESIÓN</b></button>
@@ -47,6 +48,32 @@
             </p>
         </div>
     </main>
+    <script>
+        function validateEmailAddress(email) {
+            var re = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+            return re.test(email);
+        }
+        function validateEmail() {
+            $("#resultadoE").text("");
+            var emailaddress = $("#email").val();
+            if (validateEmailAddress(emailaddress) && emailaddress.length <= 60) {
+                $("#resultadoE").text(emailaddress + " es válido :)");
+                $("#resultadoE").css("color", "green");
+            } else {
+                $("#resultadoE").text(emailaddress + " no es válido, utiliza un correo válido");
+                $("#resultadoE").css({
+                    "color": "#ff4d4d",          
+                    "background-color": "#1a1a1a", 
+                    "padding": "5px",
+                    "border-radius": "5px"
+                });
+            }
+            return false;
+
+        }
+
+    $("#ingresarcuenta-btn").bind("click", validateEmail,);
+</script>
 
 </body>
 </html>
