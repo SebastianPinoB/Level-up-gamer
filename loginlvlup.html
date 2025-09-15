@@ -20,10 +20,8 @@
         <ul>
             <li>
                 <a href="homelvlup.html" class="sinlink">Home </a> 
-                <a href="#" class="sinlink">| Productos </a>
-                <a href="#" class="sinlink">| Nosotros </a>
-                <a href="#" class="sinlink">| Blogs </a>
-                <a href="#" class="sinlink">| Contacto </a>
+                <a href="catalogo.html" class="sinlink">| Productos </a>
+                <a href="nosotros.html" class="sinlink">| Nosotros </a>
             </li>
         </ul>
     </header>
@@ -49,30 +47,40 @@
         </div>
     </main>
     <script>
-        function validateEmailAddress(email) {
-            var re = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
-            return re.test(email);
-        }
-        function validateEmail() {
-            $("#resultadoE").text("");
-            var emailaddress = $("#email").val();
-            if (validateEmailAddress(emailaddress) && emailaddress.length <= 60) {
-                $("#resultadoE").text(emailaddress + " es válido :)");
-                $("#resultadoE").css("color", "green");
-            } else {
-                $("#resultadoE").text(emailaddress + " no es válido, utiliza un correo válido");
-                $("#resultadoE").css({
-                    "color": "#ff4d4d",          
-                    "background-color": "#1a1a1a", 
-                    "padding": "5px",
-                    "border-radius": "5px"
-                });
-            }
+    function validateEmailAddress(email) {
+        var re = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+        return re.test(email);
+    }
+
+    function validateEmail() {
+        $("#resultadoE").text("");
+        var emailaddress = $("#email").val();
+        if (validateEmailAddress(emailaddress) && emailaddress.length <= 60) {
+            $("#resultadoE").text("Correo válido :)").css("color", "green");
+            return true;
+        } else {
+            $("#resultadoE").text("Correo no válido").css({
+                "color": "#ff4d4d",
+                "background-color": "#1a1a1a",
+                "padding": "5px",
+                "border-radius": "5px"
+            });
             return false;
-
         }
+    }
 
-    $("#ingresarcuenta-btn").bind("click", validateEmail,);
+     $("#loginForm").on("submit", function (e) {
+        e.preventDefault();
+        let emailB = validateEmail();
+        if (emailB) {
+            $("#ingresarcuenta-btn")
+                .css({ "background-color": "green", "color": "white" })
+                .text("Ingresando...");
+            setTimeout(() => {
+                window.location.href = "homelvlup.html";
+            },500);
+        }
+    });
 </script>
 
 </body>

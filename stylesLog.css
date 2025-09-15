@@ -162,7 +162,6 @@ input::placeholder{
 #piepag {
     background-color: #111;
     color: white;
-    padding: 20px 0;
     width: 100%;
     margin-top: auto;
 }
@@ -212,4 +211,53 @@ input::placeholder{
 
 .footerder button:hover {
     background: #1E90FF;
+}
+
+/*
+
+NOSOTROS
+
+*/
+
+#nosotros-container {
+    background-color: #1E90FF;
+    width: 80%;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px #39FF14;
+    text-align: center;
+}
+
+.titulo-seccion {
+    font-family: "Orbitron";
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.texto-nosotros {
+    font-size: 18px;
+    margin: 15px 0;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+#equipo {
+    margin-top: 40px;
+}
+
+.miembros {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.miembro {
+    text-align: center;
+    background-color: #111;
+    padding: 15px;
+    border-radius: 10px;
+    width: 200px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.6);
 }

@@ -7,8 +7,9 @@ function verificarIgualdadClaver(entrada1, entrada2) {
         console.log("Claves coinciden");
         $('#resultadoPdos').text(" Claves coinciden");
         $('#resultadoPdos').css("color", "green");
+        return true;
     } else {
-        console.log("Ponla bien");
+        console.log("No ta bien");
         $('#resultadoPdos').text("Las contraseñas no coinciden");
         $('#resultadoPdos').css({
                 "color": "#ff4d4d",          
@@ -16,14 +17,22 @@ function verificarIgualdadClaver(entrada1, entrada2) {
                 "padding": "5px",
                 "border-radius": "5px"
             });
+        return false;
     }
 }
 
 btnFormulario.addEventListener('click', (e) => {
     e.preventDefault();
-    verificarIgualdadClaver(inputClave, inputVerClave);
-    validateEmail();
-    validatePassword();
+
+    let emailValido = validateEmail();
+    let passValido = validatePassword();
+    let clavesIguales = verificarIgualdadClaver(inputClave, inputVerClave);
+
+    if (emailValido && passValido && clavesIguales) {
+        setTimeout(() => {
+            window.location.href = "homelvlup.html";
+        }, 100);
+    }
 });
 
 function validateEmailAddress(email) {
@@ -37,6 +46,7 @@ function validateEmail() {
     if (validateEmailAddress(emailaddress) && emailaddress.length <= 60) {
         $("#resultadoE").text(emailaddress + " es válido :)");
         $("#resultadoE").css("color", "green");
+        return true;
     } else {
         $("#resultadoE").text(emailaddress + " no es válido, utiliza un correo válido");
         $("#resultadoE").css({
@@ -45,8 +55,8 @@ function validateEmail() {
                 "padding": "5px",
                 "border-radius": "5px"
             });
+            return false;
     }
-    return false;
 }
 
 function validarPassword(password) {
@@ -60,6 +70,7 @@ function validatePassword() {
     if (validarPassword(password)) {
         $("#resultadoP").text("Contraseña válida :D");
         $("#resultadoP").css("color", "green");
+        return true;
     } else {
         $("#resultadoP").text("Debe tener al menos una mayúscula, una minúscula, un número y un caracter especial");
         $("#resultadoP").css({
@@ -68,8 +79,8 @@ function validatePassword() {
                 "padding": "5px",
                 "border-radius": "5px"
             });
+            return false;
     }
-    return false;
 }
 
 inputClave.addEventListener('input', () => {
