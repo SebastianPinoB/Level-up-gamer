@@ -1,0 +1,24 @@
+body{
+    background-color: #000;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    justify-self: center;
+}
+
+.tituloCategoria{
+    display: flex;
+    justify-self: flex-start;
+}
+
+hr{
+    width: 250px;
+    margin-left: 30px;
+}
+
+.categoria{
+    background-color: #252424;
+    height: 270px;
+    margin: 20px;
+}

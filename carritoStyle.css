@@ -1,0 +1,83 @@
+/*GRID*/
+#cuerpoCarrito {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 8px;
+    padding: 20px 350px 0px 350px;
+}
+    
+.div1 {
+    grid-column: span 4 / span 4;
+}
+
+.div2 {
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    grid-column-start: 5;
+}
+
+.div3 {
+    grid-column: span 4 / span 4;
+    grid-row: span 4 / span 4;
+    grid-row-start: 2;
+
+    justify-items: center;
+    justify-self: center;
+    align-items: center;
+    align-self: center;
+}
+
+.div4 {
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-column-start: 5;
+    grid-row-start: 3;
+}
+
+.imagenCarrito{
+    width: 100px;
+    height: 100px;
+}
+
+.estilosComunes{
+    border: 2px solid #3498db; /* Color y grosor del borde */
+    border-radius: 15px; /* Radio de las esquinas */
+}
+
+.cuerpoResumen{
+    display: flex;
+    justify-content: space-between;
+}
+
+.botonPagar{
+    justify-self: center;
+    width: 90%;
+}
+
+.pagar{
+    background-color: #3498db;
+    width: 100%;
+}
+.estilosComunes > div{
+    display: flex;
+    flex-direction: column;
+}
+
+.cuerpo4{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.encabezadoDelivery, .encabezadoSeguridad, .encabezadoPagos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.encabezadoDelivery>img, .encabezadoSeguridad>img, .encabezadoPagos>img{
+    width: 20px;
+    height: 20px;
+}
